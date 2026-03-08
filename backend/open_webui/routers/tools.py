@@ -5,6 +5,7 @@ import time
 import re
 import aiohttp
 from open_webui.env import AIOHTTP_CLIENT_TIMEOUT
+from open_webui.utils.access_control import has_access
 from open_webui.models.groups import Groups
 from pydantic import BaseModel, HttpUrl
 from fastapi import APIRouter, Depends, HTTPException, Request, status
